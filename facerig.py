@@ -196,67 +196,95 @@ def createRig():
 
     #Create Controllers
     createController('L_Eye_Blink', charName, 'left')
-    mc.setAttr(charName + '_L_Eye_Blink_limitBox.translateX', 11)
+    mc.setAttr(charName + '_L_Eye_Blink_limitBox.translateX', 9)
     mc.setAttr(charName + '_L_Eye_Blink_limitBox.translateY', 4.3)
     mc.setAttr(charName + '_L_Eye_Blink_limitBox.scaleX', .5)
     mc.setAttr(charName + '_L_Eye_Blink_limitBox.scaleY', .5)
     mc.setAttr(charName + '_L_Eye_Blink_limitBox.scaleZ', .5)
 
     createController('R_Eye_Blink', charName, 'right')
-    mc.setAttr(charName + '_R_Eye_Blink_limitBox.translateX', 9)
+    mc.setAttr(charName + '_R_Eye_Blink_limitBox.translateX', 11)
     mc.setAttr(charName + '_R_Eye_Blink_limitBox.translateY', 4.3)
     mc.setAttr(charName + '_R_Eye_Blink_limitBox.scaleX', .5)
     mc.setAttr(charName + '_R_Eye_Blink_limitBox.scaleY', .5)
     mc.setAttr(charName + '_R_Eye_Blink_limitBox.scaleZ', .5)
 
     createController('L_Mouth', charName, 'left')
-    mc.setAttr(charName + '_L_Mouth_limitBox.translateX', 11)
+    mc.setAttr(charName + '_L_Mouth_limitBox.translateX', 9)
     mc.setAttr(charName + '_L_Mouth_limitBox.translateY', 5.9)
     mc.setAttr(charName + '_L_Mouth_limitBox.scaleX', .5)
     mc.setAttr(charName + '_L_Mouth_limitBox.scaleY', .5)
     mc.setAttr(charName + '_L_Mouth_limitBox.scaleZ', .5)
 
     createController('R_Mouth', charName, 'right')
-    mc.setAttr(charName + '_R_Mouth_limitBox.translateX', 9)
+    mc.setAttr(charName + '_R_Mouth_limitBox.translateX', 11)
     mc.setAttr(charName + '_R_Mouth_limitBox.translateY', 5.9)
     mc.setAttr(charName + '_R_Mouth_limitBox.scaleX', .5)
     mc.setAttr(charName + '_R_Mouth_limitBox.scaleY', .5)
     mc.setAttr(charName + '_R_Mouth_limitBox.scaleZ', .5)
 
     createController('L_Eye', charName, 'left')
-    mc.setAttr(charName + '_L_Eye_limitBox.translateX', 11)
+    mc.setAttr(charName + '_L_Eye_limitBox.translateX', 9)
     mc.setAttr(charName + '_L_Eye_limitBox.translateY', 7.5)
     mc.setAttr(charName + '_L_Eye_limitBox.scaleX', .5)
     mc.setAttr(charName + '_L_Eye_limitBox.scaleY', .5)
     mc.setAttr(charName + '_L_Eye_limitBox.scaleZ', .5)
 
     createController('R_Eye', charName, 'right')
-    mc.setAttr(charName + '_R_Eye_limitBox.translateX', 9)
+    mc.setAttr(charName + '_R_Eye_limitBox.translateX', 11)
     mc.setAttr(charName + '_R_Eye_limitBox.translateY', 7.5)
     mc.setAttr(charName + '_R_Eye_limitBox.scaleX', .5)
     mc.setAttr(charName + '_R_Eye_limitBox.scaleY', .5)
     mc.setAttr(charName + '_R_Eye_limitBox.scaleZ', .5)
 
+    #controllers for left eye brows
     createController('L_Brow', charName, 'left')
-    mc.setAttr(charName + '_L_Brow_limitBox.translateX', 11)
+    mc.setAttr(charName + '_L_Brow_limitBox.translateX', 8.6)
     mc.setAttr(charName + '_L_Brow_limitBox.translateY', 9.1)
-    mc.setAttr(charName + '_L_Brow_limitBox.scaleX', .5)
+    mc.setAttr(charName + '_L_Brow_limitBox.scaleX', .15)
     mc.setAttr(charName + '_L_Brow_limitBox.scaleY', .5)
     mc.setAttr(charName + '_L_Brow_limitBox.scaleZ', .5)
-    #mc.addAttr(shortName='L_In_in_out', longName='LeftInInOut', defaultValue=0.0, minValue=0.0, maxValue=1, hidden=False, keyable=True)
-    mc.addAttr(shortName='L_In_Up_Down', longName='LeftInUpDown', defaultValue=0.0, minValue=-1.0, maxValue=1, hidden=False, keyable=True)
-    mc.addAttr(shortName='L_Mid_Up_Down', longName='LeftMidUpDown', defaultValue=0.0, minValue=-1.0, maxValue=1, hidden=False, keyable=True)
     mc.addAttr(shortName='L_Out_Up_Down', longName='LeftOutUpDown', defaultValue=0.0,  minValue=-1.0, maxValue=1, hidden=False, keyable=True)
+    
+    createController('L_Brow1', charName, 'left')
+    mc.setAttr(charName + '_L_Brow1_limitBox.translateX', 9.1)
+    mc.setAttr(charName + '_L_Brow1_limitBox.translateY', 9.1)
+    mc.setAttr(charName + '_L_Brow1_limitBox.scaleX', .15)
+    mc.setAttr(charName + '_L_Brow1_limitBox.scaleY', .5)
+    mc.setAttr(charName + '_L_Brow1_limitBox.scaleZ', .5)
+    mc.addAttr(shortName='L_Mid_Up_Down', longName='LeftMidUpDown', defaultValue=0.0, minValue=-1.0, maxValue=1, hidden=False, keyable=True)
+    
+    createController('L_Brow2', charName, 'left')
+    mc.setAttr(charName + '_L_Brow2_limitBox.translateX', 9.6)
+    mc.setAttr(charName + '_L_Brow2_limitBox.translateY', 9.1)
+    mc.setAttr(charName + '_L_Brow2_limitBox.scaleX', .15)
+    mc.setAttr(charName + '_L_Brow2_limitBox.scaleY', .5)
+    mc.setAttr(charName + '_L_Brow2_limitBox.scaleZ', .5)
+    mc.addAttr(shortName='L_In_Up_Down', longName='LeftInUpDown', defaultValue=0.0, minValue=-1.0, maxValue=1, hidden=False, keyable=True)
 
+    #controllers for right eye brows
     createController('R_Brow', charName, 'right')
-    mc.setAttr(charName + '_R_Brow_limitBox.translateX', 9)
+    mc.setAttr(charName + '_R_Brow_limitBox.translateX', 10.6)
     mc.setAttr(charName + '_R_Brow_limitBox.translateY', 9.1)
-    mc.setAttr(charName + '_R_Brow_limitBox.scaleX', .5)
+    mc.setAttr(charName + '_R_Brow_limitBox.scaleX', .14)
     mc.setAttr(charName + '_R_Brow_limitBox.scaleY', .5)
     mc.setAttr(charName + '_R_Brow_limitBox.scaleZ', .5)
-    #mc.addAttr(shortName='R_In_in_out', longName='RightInInOut', defaultValue=0.0,  minValue=0.0, maxValue=1, hidden=False, keyable=True)
     mc.addAttr(shortName='R_In_Up_Down', longName='RightInUpDown', defaultValue=0.0, minValue=-1.0, maxValue=1, hidden=False, keyable=True)
+    
+    createController('R_Brow1', charName, 'right')
+    mc.setAttr(charName + '_R_Brow1_limitBox.translateX', 11.1)
+    mc.setAttr(charName + '_R_Brow1_limitBox.translateY', 9.1)
+    mc.setAttr(charName + '_R_Brow1_limitBox.scaleX', .14)
+    mc.setAttr(charName + '_R_Brow1_limitBox.scaleY', .5)
+    mc.setAttr(charName + '_R_Brow1_limitBox.scaleZ', .5)
     mc.addAttr(shortName='R_Mid_Up_Down', longName='RightMidUpDown', defaultValue=0.0, minValue=-1.0, maxValue=1, hidden=False, keyable=True)
+    
+    createController('R_Brow2', charName, 'right')
+    mc.setAttr(charName + '_R_Brow2_limitBox.translateX', 11.6)
+    mc.setAttr(charName + '_R_Brow2_limitBox.translateY', 9.1)
+    mc.setAttr(charName + '_R_Brow2_limitBox.scaleX', .14)
+    mc.setAttr(charName + '_R_Brow2_limitBox.scaleY', .5)
+    mc.setAttr(charName + '_R_Brow2_limitBox.scaleZ', .5)
     mc.addAttr(shortName='R_Out_Up_Down', longName='RightOutUpDown', defaultValue=0.0, minValue=-1.0, maxValue=1, hidden=False, keyable=True)
 
     #Parent all the controllers
@@ -332,6 +360,7 @@ def attachBlendShapes():
             elif geoName == 'L_Mouth_CornerOut':
                 mc.setDrivenKeyframe('faceBlendShapes.L_Mouth_CornerOut', currentDriver=charName + '_L_Mouth_ctrl.translateX', driverValue=0, value=0)
                 mc.setDrivenKeyframe('faceBlendShapes.L_Mouth_CornerOut', currentDriver=charName + '_L_Mouth_ctrl.translateX', driverValue=1, value=1)
+            
             mc.select(charName + '_R_Mouth_ctrl')
             if geoName == 'R_Mouth_CornerDown':
                 mc.setDrivenKeyframe('faceBlendShapes.R_Mouth_CornerDown', currentDriver=charName + '_R_Mouth_ctrl.translateY', driverValue=0, value=0)
@@ -349,81 +378,53 @@ def attachBlendShapes():
                 mc.addAttr(longName=geoName, defaultValue=0.0, minValue=0.0, maxValue=1.0, hidden=False, keyable=True)
         
         #Blendshapes for Eyebrows 
-        if geoName == 'L_Brow*':
-            mc.select(charName + '_L_Brow_ctrl')
-            if geoName == 'L_Brow_OutUp':
-                mc.setDrivenKeyframe('faceBlendShapes.L_Brow_OutUp', currentDriver=charName + '_L_Brow_ctrl.LeftOutUpDown', driverValue=0, value=0)
-                mc.setDrivenKeyframe('faceBlendShapes.L_Brow_OutUp', currentDriver=charName + '_L_Brow_ctrl.LeftOutUpDown', driverValue=1, value=1)
-                mc.setDrivenKeyframe('faceBlendShapes.L_Brow_OutUp', currentDriver=charName + '_L_Brow_ctrl.translateY', driverValue=0, value=0)
-                mc.setDrivenKeyframe('faceBlendShapes.L_Brow_OutUp', currentDriver=charName + '_L_Brow_ctrl.translateY', driverValue=1, value=1)
-            elif geoName == 'L_Brow_OutDown':
-                mc.setDrivenKeyframe('faceBlendShapes.L_Brow_OutDown', currentDriver=charName + '_L_Brow_ctrl.LeftOutUpDown', driverValue=0, value=0)
-                mc.setDrivenKeyframe('faceBlendShapes.L_Brow_OutDown', currentDriver=charName + '_L_Brow_ctrl.LeftOutUpDown', driverValue=-1, value=1)
-                mc.setDrivenKeyframe('faceBlendShapes.L_Brow_OutDown', currentDriver=charName + '_L_Brow_ctrl.translateY', driverValue=0, value=0)
-                mc.setDrivenKeyframe('faceBlendShapes.L_Brow_OutDown', currentDriver=charName + '_L_Brow_ctrl.translateY', driverValue=-1, value=1)
-                   
-            if geoName == 'L_Brow_MidUp':
-                mc.setDrivenKeyframe('faceBlendShapes.L_Brow_MidUp', currentDriver=charName + '_L_Brow_ctrl.LeftMidUpDown', driverValue=0, value=0)
-                mc.setDrivenKeyframe('faceBlendShapes.L_Brow_MidUp', currentDriver=charName + '_L_Brow_ctrl.LeftMidUpDown', driverValue=1, value=1)
-                mc.setDrivenKeyframe('faceBlendShapes.L_Brow_MidUp', currentDriver=charName + '_L_Brow_ctrl.translateY', driverValue=0, value=0)
-                mc.setDrivenKeyframe('faceBlendShapes.L_Brow_MidUp', currentDriver=charName + '_L_Brow_ctrl.translateY', driverValue=1, value=1)
-            elif geoName == 'L_Brow_MidDown':
-                mc.setDrivenKeyframe('faceBlendShapes.L_Brow_MidDown', currentDriver=charName + '_L_Brow_ctrl.LeftMidUpDown', driverValue=0, value=0)
-                mc.setDrivenKeyframe('faceBlendShapes.L_Brow_MidDown', currentDriver=charName + '_L_Brow_ctrl.LeftMidUpDown', driverValue=-1, value=1)
-                mc.setDrivenKeyframe('faceBlendShapes.L_Brow_MidDown', currentDriver=charName + '_L_Brow_ctrl.translateY', driverValue=0, value=0)
-                mc.setDrivenKeyframe('faceBlendShapes.L_Brow_MidDown', currentDriver=charName + '_L_Brow_ctrl.translateY', driverValue=-1, value=1)
+        mc.select(charName + '_L_Brow_ctrl')
+        if geoName == 'L_Brow_OutUp':
+            mc.setDrivenKeyframe('faceBlendShapes.L_Brow_OutUp', currentDriver=charName + '_L_Brow_ctrl.translateY', driverValue=0, value=0)
+            mc.setDrivenKeyframe('faceBlendShapes.L_Brow_OutUp', currentDriver=charName + '_L_Brow_ctrl.translateY', driverValue=1, value=1)
+        elif geoName == 'L_Brow_OutDown':
+            mc.setDrivenKeyframe('faceBlendShapes.L_Brow_OutDown', currentDriver=charName + '_L_Brow_ctrl.translateY', driverValue=0, value=0)
+            mc.setDrivenKeyframe('faceBlendShapes.L_Brow_OutDown', currentDriver=charName + '_L_Brow_ctrl.translateY', driverValue=-1, value=1)
+        
+        mc.select(charName + '_L_Brow1_ctrl')
+        if geoName == 'L_Brow_MidUp':
+            mc.setDrivenKeyframe('faceBlendShapes.L_Brow_MidUp', currentDriver=charName + '_L_Brow1_ctrl.translateY', driverValue=0, value=0)
+            mc.setDrivenKeyframe('faceBlendShapes.L_Brow_MidUp', currentDriver=charName + '_L_Brow1_ctrl.translateY', driverValue=1, value=1)
+        elif geoName == 'L_Brow_MidDown':
+            mc.setDrivenKeyframe('faceBlendShapes.L_Brow_MidDown', currentDriver=charName + '_L_Brow1_ctrl.translateY', driverValue=0, value=0)
+            mc.setDrivenKeyframe('faceBlendShapes.L_Brow_MidDown', currentDriver=charName + '_L_Brow1_ctrl.translateY', driverValue=-1, value=1)
+        
+        mc.select(charName + '_L_Brow2_ctrl')
+        if geoName == 'L_Brow_InUp':
+            mc.setDrivenKeyframe('faceBlendShapes.L_Brow_InUp', currentDriver=charName + '_L_Brow2_ctrl.translateY', driverValue=0, value=0)
+            mc.setDrivenKeyframe('faceBlendShapes.L_Brow_InUp', currentDriver=charName + '_L_Brow2_ctrl.translateY', driverValue=1, value=1)
+        elif geoName == 'L_Brow_InDown':
+            mc.setDrivenKeyframe('faceBlendShapes.L_Brow_InDown', currentDriver=charName + '_L_Brow2_ctrl.translateY', driverValue=0,value=0)
+            mc.setDrivenKeyframe('faceBlendShapes.L_Brow_InDown', currentDriver=charName + '_L_Brow2_ctrl.translateY', driverValue=-1,value=1)
 
-            if geoName == 'L_Brow_InUp':
-                mc.setDrivenKeyframe('faceBlendShapes.L_Brow_InUp', currentDriver=charName + '_L_Brow_ctrl.LeftInUpDown', driverValue=0, value=0)
-                mc.setDrivenKeyframe('faceBlendShapes.L_Brow_InUp', currentDriver=charName + '_L_Brow_ctrl.LeftInUpDown', driverValue=1, value=1)
-                mc.setDrivenKeyframe('faceBlendShapes.L_Brow_InUp', currentDriver=charName + '_L_Brow_ctrl.translateY', driverValue=0, value=0)
-                mc.setDrivenKeyframe('faceBlendShapes.L_Brow_InUp', currentDriver=charName + '_L_Brow_ctrl.translateY', driverValue=1, value=1)
-            elif geoName == 'L_Brow_InDown':
-                mc.setDrivenKeyframe('faceBlendShapes.L_Brow_InDown', currentDriver=charName + '_L_Brow_ctrl.LeftInUpDown', driverValue=0, value=0)
-                mc.setDrivenKeyframe('faceBlendShapes.L_Brow_InDown', currentDriver=charName + '_L_Brow_ctrl.LeftInUpDown', driverValue=-1, value=1)
-                mc.setDrivenKeyframe('faceBlendShapes.L_Brow_InDown', currentDriver=charName + '_L_Brow_ctrl.translateY', driverValue=0,value=0)
-                mc.setDrivenKeyframe('faceBlendShapes.L_Brow_InDown', currentDriver=charName + '_L_Brow_ctrl.translateY', driverValue=-1,value=1)
-            else:
-                mc.addAttr(longName=geoName, defaultValue=0.0, minValue=0.0, maxValue=1.0,  keyable=True)
-        if geoName == 'R_Brow*':
-            mc.select(charName + '_R_Brow_ctrl')
-            if geoName == 'R_Brow_OutUp':
-                mc.setDrivenKeyframe('faceBlendShapes.R_Brow_OutUp', currentDriver=charName + '_R_Brow_ctrl.RightOutUpDown', driverValue=0, value=0)
-                mc.setDrivenKeyframe('faceBlendShapes.R_Brow_OutUp', currentDriver=charName + '_R_Brow_ctrl.RightOutUpDown', driverValue=1, value=1)
-                mc.setDrivenKeyframe('faceBlendShapes.R_Brow_OutUp', currentDriver=charName + '_R_Brow_ctrl.translateY', driverValue=0, value=0)
-                mc.setDrivenKeyframe('faceBlendShapes.R_Brow_OutUp', currentDriver=charName + '_R_Brow_ctrl.translateY', driverValue=1, value=1)
-            elif geoName == 'R_Brow_OutDown':
-                mc.setDrivenKeyframe('faceBlendShapes.R_Brow_OutDown', currentDriver=charName + '_R_Brow_ctrl.RightOutUpDown', driverValue=0, value=0)
-                mc.setDrivenKeyframe('faceBlendShapes.R_Brow_OutDown', currentDriver=charName + '_R_Brow_ctrl.RightOutUpDown', driverValue=-1, value=1)
-                mc.setDrivenKeyframe('faceBlendShapes.R_Brow_OutDown', currentDriver=charName + '_R_Brow_ctrl.translateY', driverValue=0, value=0)
-                mc.setDrivenKeyframe('faceBlendShapes.R_Brow_OutDown', currentDriver=charName + '_R_Brow_ctrl.translateY', driverValue=-1, value=1)
-            elif geoName == 'R_Brow_MidUp':
-                mc.setDrivenKeyframe('faceBlendShapes.R_Brow_MidUp', currentDriver=charName + '_R_Brow_ctrl.RightMidUpDown', driverValue=0, value=0)
-                mc.setDrivenKeyframe('faceBlendShapes.R_Brow_MidUp', currentDriver=charName + '_R_Brow_ctrl.RightMidUpDown', driverValue=1, value=1)
-                mc.setDrivenKeyframe('faceBlendShapes.R_Brow_MidUp', currentDriver=charName + '_R_Brow_ctrl.translateY', driverValue=0, value=0)
-                mc.setDrivenKeyframe('faceBlendShapes.R_Brow_MidUp', currentDriver=charName + '_R_Brow_ctrl.translateY', driverValue=-1, value=1)
-            elif geoName == 'R_Brow_MidDown':
-                mc.setDrivenKeyframe('faceBlendShapes.R_Brow_MidDown', currentDriver=charName + '_R_Brow_ctrl.RightMidUpDown', driverValue=0, value=0)
-                mc.setDrivenKeyframe('faceBlendShapes.R_Brow_MidDown', currentDriver=charName + '_R_Brow_ctrl.RightMidUpDown', driverValue=-1, value=1)
-                mc.setDrivenKeyframe('faceBlendShapes.R_Brow_MidDown', currentDriver=charName + '_R_Brow_ctrl.translateY', driverValue=0, value=0)
-                mc.setDrivenKeyframe('faceBlendShapes.R_Brow_MidDown', currentDriver=charName + '_R_Brow_ctrl.translateY', driverValue=-1, value=1)
-            elif geoName == 'R_Brow_InUp':
-                mc.setDrivenKeyframe('faceBlendShapes.R_Brow_InUp', currentDriver=charName + '_R_Brow_ctrl.RightInUpDown', driverValue=0, value=0)
-                mc.setDrivenKeyframe('faceBlendShapes.R_Brow_InUp', currentDriver=charName + '_R_Brow_ctrl.RightInUpDown', driverValue=1, value=1)
-                mc.setDrivenKeyframe('faceBlendShapes.R_Brow_InUp', currentDriver=charName + '_R_Brow_ctrl.translateY', driverValue=0, value=0)
-                mc.setDrivenKeyframe('faceBlendShapes.R_Brow_InUp', currentDriver=charName + '_R_Brow_ctrl.translateY', driverValue=1, value=1)
-            elif geoName == 'R_Brow_InDown':
-                mc.setDrivenKeyframe('faceBlendShapes.R_Brow_InDown', currentDriver=charName + '_R_Brow_ctrl.RightInUpDown', driverValue=0, value=0)
-                mc.setDrivenKeyframe('faceBlendShapes.R_Brow_InDown', currentDriver=charName + '_R_Brow_ctrl.RightInUpDown', driverValue=-1, value=1)
-                mc.setDrivenKeyframe('faceBlendShapes.R_Brow_InDown', currentDriver=charName + '_R_Brow_ctrl.translateY', driverValue=0, value=0)
-                mc.setDrivenKeyframe('faceBlendShapes.R_Brow_InDown', currentDriver=charName + '_R_Brow_ctrl.translateY', driverValue=-1, value=1)
-            elif geoName == 'R_Brow_InIn':
-                mc.setDrivenKeyframe('faceBlendShapes.R_Brow_InIn', currentDriver=charName + '_R_Brow_ctrl.RightInInOut', driverValue=0, value=0)
-                mc.setDrivenKeyframe('faceBlendShapes.R_Brow_InIn', currentDriver=charName + '_R_Brow_ctrl.RightInInOut', driverValue=-1, value=1)
-                mc.setDrivenKeyframe('faceBlendShapes.R_Brow_InIn', currentDriver=charName + '_R_Brow_ctrl.translateX', driverValue=0, value=0)
-                mc.setDrivenKeyframe('faceBlendShapes.R_Brow_InIn', currentDriver=charName + '_R_Brow_ctrl.translateX', driverValue=-1, value=1)
-            else:
-                mc.addAttr(longName=geoName, defaultValue=0.0, minValue=0.0, maxValue=1.0, hidden=False, keyable=True)
+        mc.select(charName + '_R_Brow2_ctrl')
+        if geoName == 'R_Brow_OutUp':
+            mc.setDrivenKeyframe('faceBlendShapes.R_Brow_OutUp', currentDriver=charName + '_R_Brow2_ctrl.translateY', driverValue=0, value=0)
+            mc.setDrivenKeyframe('faceBlendShapes.R_Brow_OutUp', currentDriver=charName + '_R_Brow2_ctrl.translateY', driverValue=1, value=1)
+        elif geoName == 'R_Brow_OutDown':
+            mc.setDrivenKeyframe('faceBlendShapes.R_Brow_OutDown', currentDriver=charName + '_R_Brow2_ctrl.translateY', driverValue=0, value=0)
+            mc.setDrivenKeyframe('faceBlendShapes.R_Brow_OutDown', currentDriver=charName + '_R_Brow2_ctrl.translateY', driverValue=-1, value=1)
+        
+        mc.select(charName + '_R_Brow1_ctrl')
+        if geoName == 'R_Brow_MidUp':
+            mc.setDrivenKeyframe('faceBlendShapes.R_Brow_MidUp', currentDriver=charName + '_R_Brow1_ctrl.translateY', driverValue=0, value=0)
+            mc.setDrivenKeyframe('faceBlendShapes.R_Brow_MidUp', currentDriver=charName + '_R_Brow1_ctrl.translateY', driverValue=-1, value=1)
+        elif geoName == 'R_Brow_MidDown':
+            mc.setDrivenKeyframe('faceBlendShapes.R_Brow_MidDown', currentDriver=charName + '_R_Brow1_ctrl.translateY', driverValue=0, value=0)
+            mc.setDrivenKeyframe('faceBlendShapes.R_Brow_MidDown', currentDriver=charName + '_R_Brow1_ctrl.translateY', driverValue=-1, value=1)
+        
+        mc.select(charName + '_R_Brow_ctrl')
+        if geoName == 'R_Brow_InUp':
+            mc.setDrivenKeyframe('faceBlendShapes.R_Brow_InUp', currentDriver=charName + '_R_Brow_ctrl.translateY', driverValue=0, value=0)
+            mc.setDrivenKeyframe('faceBlendShapes.R_Brow_InUp', currentDriver=charName + '_R_Brow_ctrl.translateY', driverValue=1, value=1)
+        elif geoName == 'R_Brow_InDown':
+            mc.setDrivenKeyframe('faceBlendShapes.R_Brow_InDown', currentDriver=charName + '_R_Brow_ctrl.translateY', driverValue=0, value=0)
+            mc.setDrivenKeyframe('faceBlendShapes.R_Brow_InDown', currentDriver=charName + '_R_Brow_ctrl.translateY', driverValue=-1, value=1)
 
         #Blendshapes for eye blink
         mc.select(charName + '_R_Eye_Blink_ctrl')
