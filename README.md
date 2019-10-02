@@ -4,7 +4,7 @@ Code samples and details for projects I have worked on.
 
 ## Projects
 
-### [Colorblind Screen Filter App](https://github.com/littleTinglan/screen-filter-app) - Currently under development
+### [Colorblind Screen Filter App](https://github.com/littleTinglan/screen-filter-app) - Ongoing
   * A WPF (Windows Presentation Foundation) app ideally would help to develop colorblind friendly art assets. It will apply a filter to 
   the selected area of the screen which modifies that part of the screen displaying as colorblind mode.
   * Inspired by talking to a VFX artist friend. According to him, the workflow for developing/iterating colorblind friendly art assets is painful.
